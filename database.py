@@ -77,3 +77,14 @@ def mark_task_complete(task_id):
     else:
         conn.close()
         return False
+
+
+def drop_table():
+    conn = sqlite3.connect("taskDB.db")
+    cursor = conn.cursor()
+    
+    # Drop the table if it exists
+    cursor.execute(f"DROP TABLE IF EXISTS tasks")
+    
+    conn.commit()
+    conn.close()

@@ -98,6 +98,7 @@ pipenv run python3 tests/test_add_task.py
 pipenv run python3 tests/test_delete_task.py
 pipenv run python3 tests/test_show_tasks.py
 pipenv run python3 tests/test_complete_task.py
+```
 
 ## Database Structure
 
@@ -127,7 +128,7 @@ discord-task-manager/
     ├── test_complete_task.py   # Tests for marking tasks as complete
     ├── test_delete_task.py     # Tests for deleting tasks
     └── test_show_tasks.py      # Tests for showing tasks
-'''
+```
 
 ## Contributing
 
